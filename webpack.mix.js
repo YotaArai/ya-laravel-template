@@ -15,6 +15,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
    .version()
+   .sourceMaps()
    .webpackConfig({
       plugins: [
          new CompressionPlugin({
