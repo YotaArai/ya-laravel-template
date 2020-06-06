@@ -1,9 +1,8 @@
 @section('message')
 <template>
-    <v-icon class="ml-2" small>fas fa-sign-in-alt</v-icon>
-    {{-- @if(Session::has('success_message')) --}}
+    @if(Session::has('success_message'))
     <alert type="success" message="{{ Session::get('success_message') }}"></alert>
-    {{-- @endif --}}
+    @endif
     @if(Session::has('info_message'))
     <alert type="info" message="{{ Session::get('info_message') }}"></alert>
     @endif
