@@ -21,7 +21,7 @@ mix.js('resources/js/app.js', 'public/js')
       'resources/sass/vuetify/variables.scss'
    )
    .version()
-   // .sourceMaps()
+   .sourceMaps()
    .webpackConfig({
       plugins: [
          new CompressionPlugin({
