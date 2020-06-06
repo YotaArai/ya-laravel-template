@@ -1,6 +1,8 @@
 const mix = require('laravel-mix');
 const CompressionPlugin = require('compression-webpack-plugin');
 
+require('vuetifyjs-mix-extension')
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -14,8 +16,12 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
+   .vuetify(
+      'vuetify-loader',
+      'resources/sass/vuetify/variables.scss'
+   )
    .version()
-   .sourceMaps()
+   // .sourceMaps()
    .webpackConfig({
       plugins: [
          new CompressionPlugin({

@@ -7,14 +7,9 @@
 require('./bootstrap');
 
 import Vue from 'vue'
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
-import '@fortawesome/fontawesome-free/css/all.css'
+import Vuetify from 'vuetify/lib'
 import Vuetify_ja from 'vuetify/es5/locale/ja.js'
-
-Vue.use(Vuetify, {
-    iconfont: 'fa'
-});
+import '@fortawesome/fontawesome-free/css/all.css'
 
 import Alert from './components/Alert.vue'
 
@@ -30,13 +25,16 @@ import Alert from './components/Alert.vue'
 const app = new Vue({
     el: '#app',
     vuetify: new Vuetify({
+        icons: {
+            iconfont: 'fa'
+        },
         lang: {
             locales: { Vuetify_ja },
             current: 'ja',
         },
     }),
     components: {
-        Alert
+        Alert,
     },
     created() {
         // facebookログイン後リダイレクト対策
