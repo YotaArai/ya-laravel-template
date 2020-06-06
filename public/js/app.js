@@ -74785,7 +74785,9 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     }
   }),
   components: {
-    Alert: _components_Alert_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    Alert: _components_Alert_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    VApp: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VApp"],
+    VIcon: vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["VIcon"]
   },
   created: function created() {
     // facebookログイン後リダイレクト対策
