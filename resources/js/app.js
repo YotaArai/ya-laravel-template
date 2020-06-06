@@ -13,6 +13,10 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import Alert from './components/Alert.vue'
 
+Vue.use(Vuetify, {
+    iconfont: 'fa'
+});
+
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
@@ -25,9 +29,6 @@ import Alert from './components/Alert.vue'
 const app = new Vue({
     el: '#app',
     vuetify: new Vuetify({
-        icons: {
-            iconfont: 'fa'
-        },
         lang: {
             locales: { Vuetify_ja },
             current: 'ja',

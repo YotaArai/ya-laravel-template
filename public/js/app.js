@@ -74762,7 +74762,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
- // const files = require.context('./', true, /\.vue$/i)
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  iconfont: 'fa'
+}); // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 /**
@@ -74774,9 +74777,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   vuetify: new vuetify_lib__WEBPACK_IMPORTED_MODULE_1__["default"]({
-    icons: {
-      iconfont: 'fa'
-    },
     lang: {
       locales: {
         Vuetify_ja: vuetify_es5_locale_ja_js__WEBPACK_IMPORTED_MODULE_2___default.a
