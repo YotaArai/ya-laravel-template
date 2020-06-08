@@ -13,4 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('login', 'Auth\LoginController@login')->name('login');
+Route::get('login/{social}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{social}/callback', 'Auth\LoginController@handleProviderCallback');
