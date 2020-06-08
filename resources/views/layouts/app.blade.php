@@ -29,7 +29,9 @@
     <v-app id="app">
       @yield('header')
       @yield('message')
-      @yield('content')
+      <v-content>
+        @yield('content')
+      </v-content>
       @yield('footer')
     </v-app>
   </body>
