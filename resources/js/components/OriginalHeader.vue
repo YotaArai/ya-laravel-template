@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app>
+  <v-app-bar app color="primary">
     <a href="/">ya-laravel-template</a>
     <v-spacer></v-spacer>
     <div v-if="user">
