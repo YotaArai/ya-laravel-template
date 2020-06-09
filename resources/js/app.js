@@ -13,6 +13,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import Alert from './components/Alert.vue'
 import OriginalHeader from './components/OriginalHeader.vue'
+import OriginalFooter from './components/OriginalFooter.vue'
 
 Vue.use(Vuetify, {
     iconfont: 'fa'
@@ -38,6 +39,7 @@ const app = new Vue({
     components: {
         Alert,
         OriginalHeader,
+        OriginalFooter,
         VApp,
         VContent,
         VContainer
