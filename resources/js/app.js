@@ -7,7 +7,7 @@
 require('./bootstrap');
 
 import Vue from 'vue'
-import Vuetify, { VApp, VContent } from 'vuetify/lib'
+import Vuetify, { VApp, VContent, VContainer } from 'vuetify/lib'
 import Vuetify_ja from 'vuetify/es5/locale/ja.js'
 import '@fortawesome/fontawesome-free/css/all.css'
 
@@ -39,7 +39,8 @@ const app = new Vue({
         Alert,
         OriginalHeader,
         VApp,
-        VContent
+        VContent,
+        VContainer
     },
     created() {
         // facebookログイン後リダイレクト対策
