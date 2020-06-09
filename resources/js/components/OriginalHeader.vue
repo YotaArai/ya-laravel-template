@@ -1,6 +1,8 @@
 <template>
   <v-app-bar app color="primary">
-    <a href="/">ya-laravel-template</a>
+    <a href="/" class="header-logo">
+      <img class="header-logo__img" :src="logoSrc" alt="logo-image" />
+    </a>
     <v-spacer></v-spacer>
     <div v-if="user">
       <v-menu left bottom>
@@ -29,6 +31,15 @@
   </v-app-bar>
 </template>
 
+<style lang="scss" scoped>
+.header-logo {
+  height: 100%;
+  &__img {
+    height: 100%;
+  }
+}
+</style>
+
 
 <script>
 export default {
@@ -37,6 +48,10 @@ export default {
       type: Object
     },
     path: {
+      type: String,
+      required: true
+    },
+    logoSrc: {
       type: String,
       required: true
     }

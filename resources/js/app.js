@@ -40,21 +40,21 @@ const app = new Vue({
             dark: false,
             themes: {
                 light: {
-                    primary: colors.blue.darken2, // #1976D2
+                    primary: colors.blue.darken2,   // #1976D2
                     secondary: colors.grey.darken3, // #424242
-                    accent: colors.blue.accent1, // #82B1FF
-                    error: colors.red.accent2, // #FF5252
-                    info: colors.blue, // #2196F3
-                    success: colors.green, // #4CAF50
+                    accent: colors.blue.accent1,    // #82B1FF
+                    error: colors.red.accent2,      // #FF5252
+                    info: colors.blue,              // #2196F3
+                    success: colors.green,          // #4CAF50
                     warning: colors.orange.darken1, // #FB8C00
                 },
                 dark: {
-                    primary: colors.blue, // #2196F3
+                    primary: colors.blue,           // #2196F3
                     secondary: colors.grey.darken3, // #424242
-                    accent: colors.pink.accent2, // #FF4081
-                    error: colors.red.accent2, // #FF5252
-                    info: colors.blue, // #2196F3
-                    success: colors.green, // #4CAF50
+                    accent: colors.pink.accent2,    // #FF4081
+                    error: colors.red.accent2,      // #FF5252
+                    info: colors.blue,              // #2196F3
+                    success: colors.green,          // #4CAF50
                     warning: colors.orange.darken1, // #FB8C00
                 },
             },
