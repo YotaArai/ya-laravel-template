@@ -1,3 +1,7 @@
+// 他の変数についてはこちらから
+// https://vuetifyjs.com/ja/customization/sass-variables/
+@import '~vuetify/src/styles/settings/_colors.scss';
+
 $body-font-family: '游ゴシック Medium',
 '游ゴシック体',
 'Yu Gothic Medium',
@@ -9,3 +13,7 @@ Meiryo,
 'ＭＳ Ｐゴシック',
 'MS PGothic',
 sans-serif;
+
+$material-light: (
+  'background': map-get($grey, 'lighten-4'),
+);
