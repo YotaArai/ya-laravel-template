@@ -13,6 +13,7 @@ import colors from 'vuetify/lib/util/colors'
 import '@fortawesome/fontawesome-free/css/all.css'
 
 import Alert from './components/Alert.vue'
+import LoginButtons from './components/LoginButtons.vue'
 import OriginalHeader from './components/OriginalHeader.vue'
 import OriginalFooter from './components/OriginalFooter.vue'
 
@@ -62,6 +63,7 @@ const app = new Vue({
     }),
     components: {
         Alert,
+        LoginButtons,
         OriginalHeader,
         OriginalFooter,
         VApp,

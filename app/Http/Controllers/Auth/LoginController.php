@@ -60,7 +60,7 @@ class LoginController extends Controller
         }
         session(['url.intended' => $intended]);
 
-        return view('login/index');
+        return view('auth/login');
     }
 
     /**
