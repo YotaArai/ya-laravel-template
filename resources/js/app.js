@@ -40,8 +40,10 @@ const app = new Vue({
         theme: {
             dark: false,
             themes: {
+                // その他のcolorについてはこちらから
+                // https://vuetifyjs.com/ja/styles/colors/
                 light: {
-                    primary: colors.blue.darken2,   // #1976D2
+                    primary: colors.indigo,         // #3F51B5
                     secondary: colors.grey.darken3, // #424242
                     accent: colors.blue.accent1,    // #82B1FF
                     error: colors.red.accent2,      // #FF5252
