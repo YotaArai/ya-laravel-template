@@ -15,6 +15,8 @@
 <div>
   <h2>ホーム画面</h2>
 </div>
+<v-container>
+</v-container>
 @endsection
 
 @include('layouts.footer')

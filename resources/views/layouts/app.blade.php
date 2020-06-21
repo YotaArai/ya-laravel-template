@@ -30,9 +30,7 @@
       @yield('header')
       @yield('message')
       <v-main>
-        <v-container>
-          @yield('content')
-        </v-container>
+        @yield('content')
       </v-main>
       @yield('footer')
     </v-app>

@@ -12,8 +12,10 @@
 @include('layouts.message')
 
 @section('content')
-<h2 class="display-1 text-center my-6">ログイン</h2>
-<login-buttons></login-buttons>
+<v-container>
+  <h2 class="display-1 text-center my-6">ログイン</h2>
+  <login-buttons></login-buttons>
+</v-container>
 @endsection
 
 @include('layouts.footer')
