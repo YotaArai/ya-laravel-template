@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary">
+  <v-app-bar app color="primary" flat>
     <a href="/" class="header-logo">
       <img class="header-logo__img" :src="logoSrc" alt="logo-image" />
     </a>
