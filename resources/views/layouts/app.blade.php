@@ -29,11 +29,11 @@
     <v-app id="app">
       @yield('header')
       @yield('message')
-      <v-content>
+      <v-main>
         <v-container>
           @yield('content')
         </v-container>
-      </v-content>
+      </v-main>
       @yield('footer')
     </v-app>
   </body>

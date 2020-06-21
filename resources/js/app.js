@@ -7,7 +7,7 @@
 require('./bootstrap');
 
 import Vue from 'vue'
-import Vuetify, { VApp, VContent, VContainer, VRow, VCol } from 'vuetify/lib'
+import Vuetify, { VApp, VMain, VContainer, VRow, VCol } from 'vuetify/lib'
 import Vuetify_ja from 'vuetify/es5/locale/ja.js'
 import colors from 'vuetify/lib/util/colors'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -69,7 +69,7 @@ const app = new Vue({
         OriginalHeader,
         OriginalFooter,
         VApp,
-        VContent,
+        VMain,
         VContainer,
         VRow,
         VCol
