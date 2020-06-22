@@ -43,7 +43,7 @@ const app = new Vue({
                 // その他のcolorについてはこちらから
                 // https://vuetifyjs.com/ja/styles/colors/
                 light: {
-                    primary: colors.indigo,         // #3F51B5
+                    primary: colors.blueGrey,       // #607D8B
                     secondary: colors.grey.darken3, // #424242
                     accent: colors.blue.accent1,    // #82B1FF
                     error: colors.red.accent2,      // #FF5252
