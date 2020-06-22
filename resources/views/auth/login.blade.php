@@ -13,7 +13,7 @@
 
 @section('content')
 <v-container>
-  <h2 class="display-1 text-center my-6">ログイン</h2>
+  <h2 class="text-h4 text-center my-6">ログイン</h2>
   <login-buttons></login-buttons>
 </v-container>
 @endsection
