@@ -13,6 +13,7 @@
 
 @section('content')
 <div class="description primary">
+  @guest
   <v-container>
     <v-row>
       <v-col cols="12" sm="7" lg="6" offset-lg="1">
@@ -29,6 +30,7 @@
       </v-col>
     </v-row>
   </v-container>
+  @endguest
 </div>
 <v-container>
 </v-container>
