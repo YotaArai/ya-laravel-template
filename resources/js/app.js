@@ -50,6 +50,7 @@ const app = new Vue({
                     info: colors.blue,              // #2196F3
                     success: colors.green,          // #4CAF50
                     warning: colors.orange.darken1, // #FB8C00
+                    link: colors.blueGrey.lighten3, // #B0BEC5
                 },
                 dark: {
                     primary: colors.blue,           // #2196F3
@@ -59,6 +60,7 @@ const app = new Vue({
                     info: colors.blue,              // #2196F3
                     success: colors.green,          // #4CAF50
                     warning: colors.orange.darken1, // #FB8C00
+                    link: colors.blueGrey.lighten3, // #B0BEC5
                 },
             },
         },

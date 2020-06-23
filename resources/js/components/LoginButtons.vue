@@ -22,7 +22,7 @@
     </v-row>
     <div class="my-1 text-caption text-center">
       <div>
-        <a href="/terms">利用規約</a>に同意の上ログインしてください
+        <a href="/terms" class="link--text">利用規約</a>に同意の上ログインしてください
       </div>
       <div>ログイン後に許可なくSNSへの投稿は行いません</div>
     </div>
