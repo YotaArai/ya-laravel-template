@@ -22,7 +22,7 @@
 |vuetify|2.3.1|
 
 ## 初回実行手順
-1.クローン後に`.env.example`を複製して`.env`にリネーム
+1.`.env.example`を複製して`.env`にリネーム
 
 2.hostファイルにdockerのIPアドレスとdockertest.comを紐つける行を追加
 
@@ -41,4 +41,4 @@
     php artisan key:generate
     php artisan migrate
 
-4.ブラウザでhttps://dockertest.comを開く
+4.ブラウザで https://dockertest.com を開く
