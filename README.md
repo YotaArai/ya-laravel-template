@@ -20,3 +20,25 @@
 |:--|:--:|
 |Vue.js|2.5.17|
 |vuetify|2.3.1|
+
+## 初回実行手順
+1.クローン後に`.env.example`を複製して`.env`にリネーム
+
+2.hostファイルにdockerのIPアドレスとdockertest.comを紐つける行を追加
+
+例
+
+    127.0.75.1 dockertest.com
+
+3.以下のコマンドをプロジェクト直下で実行する
+
+    docker-compose up -d --build
+    docker-compose exec app bash
+
+(以下appコンテナ内にて)
+
+    composer install
+    php artisan key:generate
+    php artisan migrate
+
+4.ブラウザでhttps://dockertest.comを開く
