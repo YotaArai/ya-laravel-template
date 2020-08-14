@@ -5,6 +5,8 @@
 </title>
 @endsection
 
+@include('layouts.scripts')
+
 @include('layouts.favicon')
 
 @include('layouts.header')
