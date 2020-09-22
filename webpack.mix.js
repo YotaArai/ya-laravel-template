@@ -22,6 +22,16 @@ mix.js('resources/js/app.js', 'public/js')
    )
    .version()
    .sourceMaps()
+   .browserSync({
+      files: [
+         "resources/views/**/*.blade.php",
+         "public/**/*.*"
+      ],
+      proxy: {
+         target: "https://dockertest.com/",
+      },
+      open: false
+   })
    .webpackConfig({
       plugins: [
          new CompressionPlugin({
