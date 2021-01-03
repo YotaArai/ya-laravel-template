@@ -24,7 +24,15 @@
 ## 初回実行手順
 1.`.env.example`を複製して`.env`にリネーム
 
-2.hostファイルにdockerのIPアドレスとdockertest.comを紐つける行を追加
+2.hostsファイルにIPアドレス※とdockertest.comを紐つける行を追加
+
+※IPアドレスについて
+
+(Windowsの場合):`ipconfig`を実行して、「イーサネット アダプター vEthernet (DockerNAT)->IPv4 アドレス」に表示されているIPアドレスをhostsに記述する
+
+(Macの場合):以下のコマンドで127.0.0.1~127.255.255.254の中からループバックアドレスを設定し、設定したIPアドレスをhostsに記述する
+
+    sudo ifconfig lo0 alias 127.0.75.1
 
 例
 
