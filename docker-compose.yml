@@ -6,37 +6,32 @@ services:
       - 80:80
       - 443:443
     depends_on:
-        - web
+      - web
     restart: always
     environment:
       DOMAINS: 'dockertest.com -> http://web:8000'
       STAGE: local
-    depends_on:
-      - app
     volumes:
       - ssl-certs:/var/lib/https-portal
-  app:
-    build: ./docker/php
-    depends_on:
-      - web
-    volumes:
-      - .:/var/www/html
-      - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
   web:
     image: nginx:1.15.6
     ports:
       - "8000:8000"
     depends_on:
-      - db
+      - app
     volumes:
       - ./docker/web/default.conf:/etc/nginx/conf.d/default.conf
+      - .:/var/www/html
+    command: [nginx, '-g', 'daemon off;']
+  app:
+    build: ./docker/php
+    volumes:
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
       - .:/var/www/html
   db:
     image: postgres:10.1
     ports:
       - "5432:5432"
-    depends_on:
-        - redis
     environment:
       - "POSTGRES_USER=postgres"
       - "POSTGRES_PASSWORD=secret"
