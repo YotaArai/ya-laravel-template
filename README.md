@@ -50,3 +50,9 @@
     php artisan migrate
 
 4.ブラウザで https://dockertest.com を開く
+
+(以下はxdebugの設定)
+
+5.VSCodeの拡張機能[PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)をインストール
+
+6.実行メニューから「Listen for XDebug」を選択してデバッグを開始。VSCode上でブレークポイントを設定して、ブラウザ側で操作するとブレークポイントで処理が一時停止する。
